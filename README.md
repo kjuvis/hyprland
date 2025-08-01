@@ -2,17 +2,11 @@
 
 ## Quick Installation Script 🚀
 
-1. Clone the repository to your home folder:
+Clone the repository to your home folder:
     ```
     git clone https://github.com/kjuvis/hyprland.git ~/simple-hyprland
-    ```
-2. Navigate to the installer directory:
-    ```
     cd ~/simple-hyprland/scripts/installer
-    ```
-3. Run the installation script with sudo:
-    ```
-    sudo sh install.sh
+    sh install.sh
     ```
 
 ### Key Bindings 🎹
