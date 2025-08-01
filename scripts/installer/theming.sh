@@ -8,9 +8,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Installation started for theming section"
 echo "\nStarting theming setup..."
 
-pacman -S --noconfirm nwg-look
-
-pacman -S --noconfirm qt5ct qt6ct kvantum
+sudo pacman -S --noconfirm nwg-look qt5ct qt6ct kvantum
 
 tar -xvf /home/$SUDO_USER/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
 

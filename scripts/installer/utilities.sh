@@ -7,13 +7,13 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Installation started for utilities section"
 echo "\nStarting utilities setup..."
 
-pacman -S --noconfirm waybar" "Install Waybar - Status Bar" "yes
+sudo pacman -S --noconfirm waybar
 cp -r /home/$SUDO_USER/simple-hyprland/configs/waybar /home/$SUDO_USER/.config/
 
-yay -S --sudoloop --noconfirm tofi" "Install Tofi - Application Launcher
+yay -S --sudoloop --noconfirm tofi
 cp -r /home/$SUDO_USER/simple-hyprland/configs/tofi /home/$SUDO_USER/.config/
 
-pacman -S --noconfirm cliphist
+sudo pacman -S --noconfirm cliphist
 
 yay -S --sudoloop --noconfirm swww
 mkdir -p /home/$SUDO_USER/.config/assets/backgrounds && cp -r /home/$SUDO_USER/simple-hyprland/assets/backgrounds /home/$SUDO_USER/.config/assets/

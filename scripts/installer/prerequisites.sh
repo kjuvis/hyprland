@@ -7,14 +7,10 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "Installation started for prerequisites section"
 echo "\nStarting prerequisites setup..."
 
-pacman -Syyu --noconfirm
+sudo pacman -Syyu --noconfirm
 
-pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl
+sudo pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl tar ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono
 
-pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono
-
-pacman -S --noconfirm sddm && systemctl enable sddm.service
-
-pacman -S --noconfirm tar
+sudo pacman -S --noconfirm sddm && systemctl enable sddm.service
 
 echo "------------------------------------------------------------------------"
