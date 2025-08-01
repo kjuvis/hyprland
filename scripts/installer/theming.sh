@@ -16,7 +16,7 @@ tar -xvf /home/$SUDO_USER/simple-hyprland/assets/icons/Tela-circle-dracula.tar.x
 
 yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git
 
-sudo cp -r $SCRIPT_DIR/simple-hyprland/configs/alacritty /home/$SUDO_USER/.config/
+
 
 # Add instructions to configure theming
 echo "\nPost-installation instructions:"
