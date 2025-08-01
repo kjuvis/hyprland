@@ -3,23 +3,22 @@
 # Get the directory of the current script
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Source helper file
-source $SCRIPT_DIR/helper.sh
+
 
 log_message "Installation started for theming section"
 print_info "\nStarting theming setup..."
 
-run_command "pacman -S --noconfirm nwg-look"
+pacman -S --noconfirm nwg-look
 
-run_command "pacman -S --noconfirm qt5ct qt6ct kvantum"
+pacman -S --noconfirm qt5ct qt6ct kvantum
 
-run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/"
+tar -xvf /home/$SUDO_USER/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
 
-run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/"
+tar -xvf /home/$SUDO_USER/simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
 
-run_command "yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git"
+yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git
 
-run_command "cp -r /home/$SUDO_USER/simple-hyprland/configs/alacritty /home/$SUDO_USER/.config/"
+cp -r /home/$SUDO_USER/simple-hyprland/configs/alacritty /home/$SUDO_USER/.config/
 
 # Add instructions to configure theming
 print_info "\nPost-installation instructions:"
