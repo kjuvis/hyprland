@@ -4,8 +4,8 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
-log_message "Installation started for prerequisites section"
-print_info "\nStarting prerequisites setup..."
+echo "Installation started for prerequisites section"
+echo "\nStarting prerequisites setup..."
 
 pacman -Syyu --noconfirm
 

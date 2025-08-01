@@ -5,9 +5,9 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
 
-log_message "Installation started for hypr section"
-print_info "\nStarting hypr setup..."
-print_info "\nEverything is recommended to INSTALL"
+echo "Installation started for hypr section"
+echo "\nStarting hypr setup..."
+echo "\nEverything is recommended to INSTALL"
 
 pacman -S --noconfirm hyprland
 mkdir -p /home/$SUDO_USER/.config/hypr/ && cp -r /home/$SUDO_USER/simple-hyprland/configs/hypr/hyprland.conf /home/$SUDO_USER/.config/hypr/

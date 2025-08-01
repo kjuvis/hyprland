@@ -5,8 +5,8 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
 
-log_message "Final setup script started"
-print_bold_blue "\nCongratulations! Your Hyprland setup is complete!"
-print_success "\nEnjoy your new Hyprland environment!"
+echo "Final setup script started"
+echo "\nCongratulations! Your Hyprland setup is complete!"
+echo "\nEnjoy your new Hyprland environment!"
 
 echo "------------------------------------------------------------------------"

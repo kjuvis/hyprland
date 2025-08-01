@@ -5,8 +5,8 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
 
-log_message "Installation started for theming section"
-print_info "\nStarting theming setup..."
+echo "Installation started for theming section"
+echo "\nStarting theming setup..."
 
 pacman -S --noconfirm nwg-look
 
@@ -21,8 +21,8 @@ yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git
 cp -r /home/$SUDO_USER/simple-hyprland/configs/alacritty /home/$SUDO_USER/.config/
 
 # Add instructions to configure theming
-print_info "\nPost-installation instructions:"
-print_bold_blue "Set themes and icons:"
+echo "\nPost-installation instructions:"
+echo "Set themes and icons:"
 echo "   - Run 'nwg-look' and  set the global GTK and icon theme"
 echo "   - Open 'kvantummanager' (run with sudo for system-wide changes) to select and apply the Catppuccin theme"
 echo "   - Open 'qt6ct' to set the icon theme"

@@ -4,8 +4,8 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
-log_message "Installation started for utilities section"
-print_info "\nStarting utilities setup..."
+echo "Installation started for utilities section"
+echo "\nStarting utilities setup..."
 
 pacman -S --noconfirm waybar" "Install Waybar - Status Bar" "yes
 cp -r /home/$SUDO_USER/simple-hyprland/configs/waybar /home/$SUDO_USER/.config/
