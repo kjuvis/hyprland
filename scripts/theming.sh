@@ -10,9 +10,9 @@ echo "\nStarting theming setup..."
 
 sudo pacman -S --noconfirm nwg-look qt5ct qt6ct kvantum
 
-sudo tar -xvf ../simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
+sudo tar -xvf $SCRIPT_DIR/../simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/
 
-sudo tar -xvf ../simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
+sudo tar -xvf $SCRIPT_DIR/../simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/
 
 yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git
 

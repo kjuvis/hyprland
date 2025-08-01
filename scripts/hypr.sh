@@ -13,8 +13,8 @@ sudo pacman -S --noconfirm hyprland xdg-desktop-portal-hyprland polkit-kde-agent
 
 
 sudo mkdir -p /home/$SUDO_USER/.config/hypr/ 
-cp -r ../simple-hyprland/configs/hypr/hyprland.conf /home/$SUDO_USER/.config/hypr/
-sudo cp -r ../simple-hyprland/configs/dunst /home/$SUDO_USER/.config/
+sudo cp -r $SCRIPT_DIR/../simple-hyprland/configs/hypr/hyprland.conf /home/$SUDO_USER/.config/hypr/
+sudo cp -r $SCRIPT_DIR/../simple-hyprland/configs/dunst /home/$SUDO_USER/.config/
 
 
 echo "------------------------------------------------------------------------"
