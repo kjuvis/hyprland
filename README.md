@@ -3,11 +3,11 @@
 ## Quick Installation Script 🚀
 
 Clone the repository to your home folder:
-    ```
+   ```bash
     git clone https://github.com/kjuvis/hyprland.git ~/simple-hyprland
     cd ~/simple-hyprland/scripts/installer
     sh install.sh
-    ```
+   ```
 
 ### Key Bindings 🎹
 
