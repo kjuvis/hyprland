@@ -41,3 +41,5 @@ style = "Regular"
 x = 0
 y = 4
 
+[window]
+opacity = 0.8
